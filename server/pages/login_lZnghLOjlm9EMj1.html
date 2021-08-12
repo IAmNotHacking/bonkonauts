@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>Login - bonkonauts</title>
+		<link rel="stylesheet" href="./css/root.css">
+		<link rel="stylesheet" href="./css/pages/login.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="./js/components/Animation.js"></script>
+		<script src="./js/components/AlertEmitter.js"></script>
+		<script src="./js/pages/login.js" defer></script>
+		<link rel="shortcut icon" href="./media/logo.ico" />
+	</head>
+	<body>
+		<canvas id="anim" class="canvas-background"></canvas>
+		<container class="alerts"></container>
+		<form class="login-form">
+			<h1>== Login ==</h1>
+			<div class="form-input-material">
+			  <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" class="form-control-material" />
+			</div>
+			<div class="form-input-material">
+			  <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" class="form-control-material" />
+			</div>
+			<wrapper>
+				<button type="button" class="btn btn-ghost" onclick="window.location.pathname = '/'">Back</button>
+				<button type="submit" class="btn btn-ghost">Login</button>
+			</wrapper>
+			
+		  </form>
+	</body>
+</html>
