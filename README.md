@@ -23,18 +23,18 @@ Hello! **bonkonauts** is a bonk.io account viewer / dashboard. By logging in wit
 
 ### Avatars
   - Displays all 5 of your skin slots, as well as the option to open the skin in [Bonk Leagues](https://bonkleagues.io/) as a skin share link.
-![Avatars](./screenshots/avatars.jpg)
+![Avatars](./screenshots/avatars.JPG)
 
 ### Friends
   - Bonk Friends
     - Display a list of your bonk.io friends, their user id, and if they are online / offline.
   - Flash Friends
     - Simply display a list of all your friends from bonk.io flash version (if you had any)
-![Friends](./screenshots/friends.jpg)
+![Friends](./screenshots/friends.JPG)
 
 ### Leaderboard
   - The leaderboard is basically a list of every user that has logged in to **bonkonauts**, and is used more like a level leaderboard. It displays the highest level users at the top, and lowest level at the bottom. Anytime you login to **bonkonauts** or press the `Reload` button, the leaderboard will update accordingly.
-![Leaderboard](./screenshots/leaderboard.jpg)
+![Leaderboard](./screenshots/leaderboard.JPG)
 
 ## Contact
 Keep in mind that everything on this site is subject to change, and all input is appreciated. If you have suggestions / new ideas / bug fixes, contact `IAmNotHacking#3249`
