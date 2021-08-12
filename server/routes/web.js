@@ -13,7 +13,6 @@ WEB.get(['/', '/experience', '/avatars', '/maps', '/friends', '/database', '/lea
 
 WEB.get('/login', (req, res) => {
 	req.session.user = null;
-	console.log(__dirname)
 	return res.sendFile(path.join(__dirname, '../pages/login_lZnghLOjlm9EMj1.html'));
 });
 

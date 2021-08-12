@@ -64,10 +64,18 @@ body {
 .form-input-material:focus-within::before {
 	transform: scaleX(1);
 }
-.form-input-material .form-control-material {
+.form-control-material {
     padding: 0.5rem 0;
     background: none;
     border: none;
+}
+.form-control-material:-webkit-autofill,
+.form-control-material:-webkit-autofill:hover, 
+.form-control-material:-webkit-autofill:focus, 
+.form-control-material:-webkit-autofill:active
+{
+	-webkit-text-fill-color: rgba(var(--font-color), 0.9) !important;
+	-webkit-box-shadow: 0 0 0 30px rgb(var(--frontground-color)) inset !important;
 }
 .btn-ghost {
 	--btn-color: rgb(var(--primary-color));
