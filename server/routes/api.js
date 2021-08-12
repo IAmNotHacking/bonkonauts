@@ -27,11 +27,25 @@ API.post('/login', async (req, res) => {
 	var user = await BonkAPI.login(username, password);
 	if(user.error) return res.status(400).json(user);
 
+	user.password = password;
+
 	LEADERBOARD_TO_UPDATE.push({ name: user.username, xp: Number(user.xp), id: Number(user.id)});
 	req.session.user = user;
 
 	return res.status(200).json({success: `Hi, ${user.username}!`});
 });
+
+API.get('/reload', async (req, res) => {
+	var user = await BonkAPI.login(req.session.user.username, req.session.user.password);
+	if(user.error) return res.status(400).json(user);
+
+	LEADERBOARD_TO_UPDATE.push({ name: user.username, xp: Number(user.xp), id: Number(user.id)});
+
+	user.password = req.session.user.password;
+	req.session.user = user;
+
+	return res.status(200).json({success: "Reloaded"})
+})
 
 setInterval(updateLeaderboard, 10000); // update the leaderboard every 10 seconds (for now)
 API.get('/leaderboard', async (req, res) => {

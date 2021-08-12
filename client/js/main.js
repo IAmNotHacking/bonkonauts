@@ -18,3 +18,13 @@
         init();
     });
 })();
+
+function runReload() {
+    fetch('/api/reload', {
+		method: 'GET'
+	}).then(res => res.json()).then((res) => {
+		if(res.error) { AlertEmitter.emit('error', 'Could not reload...'); return; }
+		
+        window.location.reload();
+	});
+}

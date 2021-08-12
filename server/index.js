@@ -23,7 +23,7 @@ app.use('/api', require('./routes/api.js'));
 // any other endpoints attempted that arent valid, will send a 404 response
 app.use(function(req, res) {
     res.status(404);
-	return res.sendFile(path.join(__dirname, '../client/404_fxqWIbIeZeANEAg.html'));
+	return res.sendFile(path.join(__dirname, './pages/404_fxqWIbIeZeANEAg.html'));
 });
 
 app.listen(PORT, () => {

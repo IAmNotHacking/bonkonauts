@@ -32,6 +32,11 @@ class SideNavComponent {
 				<span>Leaderboard</span>
 			</a>
 			<hr/>
+			<a onclick="runReload()">
+				<i class="icon fas fa-sync-alt"></i>
+				<span>Reload</span>
+			</a>
+			<hr/>
 			<!--<a class="${path == "/maps" ? 'selected' : ''}" href="/maps">
 				<i class="icon fas fa-table"></i>
 				<span>Maps</span>

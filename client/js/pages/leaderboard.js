@@ -4,8 +4,7 @@ function init() {
 	fetch('/api/leaderboard', {
 		method: 'GET'
 	}).then(res => res.json()).then((res) => {
-		console.log(res);
-		if(res.error) { leaderboard.innerHTML = `<p>${res.error}</p>`; }
+		if(res.error) { leaderboard.innerHTML = `<p>${res.error}</p>`; return; }
 		const LEADERBOARD = res;
 
 		let count = 1;
