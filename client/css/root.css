@@ -137,6 +137,10 @@ alert.Info {
 	padding: 1.75rem;
 	cursor: pointer;
 	font-weight: 600;
+	transition: transform .3s;
+}
+.topnav .logo:hover {
+	transform: scale(1.1);
 }
 .topnav wrapper {
 	position: relative;
@@ -198,6 +202,7 @@ alert.Info {
 	text-decoration: none;
 	border: none;
 	border-left: 0.5rem solid transparent;
+	transition: background-color 0.3s;
 }
 .sidenav a:hover {
 	background-color: rgba(0,0,0, .3);

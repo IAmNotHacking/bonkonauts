@@ -42,7 +42,7 @@ function init() {
 			tmpItem.innerHTML = `<strong>Progress</strong>`;
 		tmpCard.appendChild(tmpItem);
 		tmpItem = document.createElement('item');
-			tmpItem.innerHTML = `<div class="progress-stats">${currThisLevel.toLocaleString()} / ${maxThisLevel.toLocaleString()}</div><div class="progress-wrapper"><div class="progress" style="width: ${percent}"></div><perc>${percent}</perc></div>`
+			tmpItem.innerHTML = `<div class="progress-stats">${currThisLevel.toLocaleString()} / ${maxThisLevel.toLocaleString()}</div><div class="progress-wrapper"><div class="progress" style="width: ${percent}"><perc>${percent}</perc></div></div>`
 		tmpCard.appendChild(tmpItem);
 	expContainer.appendChild(tmpCard);
 
@@ -62,13 +62,13 @@ function init() {
 			tmpItem.innerHTML = `<strong>Milestones</strong> <li><b>To level ${milestones[0].level}</b>:`;
 		tmpCard.appendChild(tmpItem);
 		tmpItem = document.createElement('item');
-			tmpItem.innerHTML = `<div class="progress-stats">${userXP.toLocaleString()} / ${milestones[0].xp}</div><div class="progress-wrapper"><div class="progress" style="width: ${milestones[0].percent}%"></div><perc>${milestones[0].percent}%</perc></div>`;
+			tmpItem.innerHTML = `<div class="progress-stats">${userXP.toLocaleString()} / ${milestones[0].xp}</div><div class="progress-wrapper"><div class="progress" style="width: ${milestones[0].percent}%"><perc>${milestones[0].percent}%</perc></div></div>`;
 		tmpCard.appendChild(tmpItem);
 		tmpItem = document.createElement('item');
 			tmpItem.innerHTML = `<li><b>To level ${milestones[1].level}</b>:`;
 		tmpCard.appendChild(tmpItem);
 		tmpItem = document.createElement('item');
-			tmpItem.innerHTML = `<div class="progress-stats">${userXP.toLocaleString()} / ${milestones[1].xp}</div><div class="progress-wrapper"><div class="progress" style="width: ${milestones[1].percent}%"></div><perc>${milestones[1].percent}%</perc></div>`;
+			tmpItem.innerHTML = `<div class="progress-stats">${userXP.toLocaleString()} / ${milestones[1].xp}</div><div class="progress-wrapper"><div class="progress" style="width: ${milestones[1].percent}%"><perc>${milestones[1].percent}%</perc></div></div>`;
 		tmpCard.appendChild(tmpItem);
 	expContainer.appendChild(tmpCard);
 

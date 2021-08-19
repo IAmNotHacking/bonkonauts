@@ -56,54 +56,24 @@ card item div.progress-stats {
 card item div.progress-wrapper {
 	width: 97%;
 	height: 3rem;
+	transform: scale(0.95);
 
 	background-color: rgba(0,0,0, .3);
 	border-radius: 3px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
+	display: block;
+
+	transition: transform 0.3s;
+
 }
-card item div.progress-wrapper perc {
-	display:inline-block;
-	position: absolute;
-	color: #eee;
-	-webkit-text-stroke: 0.2px black;
-	text-stroke: 0.2px black;
-	top: 2.2rem;
-	left: 45%;
-	font-weight: 600;
+card item div.progress-wrapper:hover {
+	transform: scale(1);
 }
 card item div.progress {
 	display: flex;
 	height: 100%;
 	align-items: center;
 	justify-content: center;
-	background-image:
-	   -webkit-linear-gradient(-40deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #7a683a, #9c813c, #b98f25, #ffb700);
-
-    border-radius: 3px; 
-    background-size: 2rem 1rem, 100% 100%, 100% 100%;
-}
-
-card item progress[value] {
-	-webkit-appearance: none;
-    appearance: none;
-
-	margin-top: 0.5rem;
-
-	width: 95%;
-  	height: 3rem;
-}
-card item progress[value]::-webkit-progress-bar {
-	background-color: rgba(0,0,0, .3);
-	border-radius: 3px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
-}
-card item progress[value]::-webkit-progress-value {
 	background-image:
 	   -webkit-linear-gradient(-40deg, 
 	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 

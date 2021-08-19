@@ -49,6 +49,10 @@ card item ul li {
 	grid-template-columns: repeat(3, 1fr);
 	color: rgba(var(--font-color), 0.9);
 	font-size: 0.9rem;
+	transition: background-color 0.4s ease;
+}
+card item ul li:not(:first-child):hover {
+	background-color: rgba(var(--primary-color), 0.2) !important;
 }
 card item ul li.user:nth-child(odd) {
 	background-color:rgba(255, 255, 255, .1)
