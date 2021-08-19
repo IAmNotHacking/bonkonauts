@@ -16,10 +16,10 @@ card {
 	margin: 1rem;
 	transition: 0.35s;
 }
-card:hover {
+/* card:hover {
 	-webkit-box-shadow: 0 0 10px 3px rgba(var(--primary-color), 0.25);
 	box-shadow: 0 0 10px 3px rgba(var(--primary-color), 0.25);
-}
+} */
 card item {
 	display: block;
 	position: relative;
@@ -32,6 +32,23 @@ card item {
 card item strong {
 	color: rgba(var(--primary-color), 0.7);
 	padding-right: 0.25rem;
+}
+card input {
+	position:absolute;
+	top: 0.5vw;
+	right: 0.5vw;
+	background-color:rgba(0, 0, 0, .1);
+	border: none;
+	border: 1px solid rgba(var(--primary-color), 0.9);
+	border-radius: 5px;
+    outline:none;
+	color:rgba(var(--font-color), 0.9);
+	padding: 0.35rem;
+	transition: 0.2s;
+}
+card input:focus {
+	-webkit-box-shadow: 0 0 10px 3px rgba(var(--primary-color), 0.25);
+	box-shadow: 0 0 10px 3px rgba(var(--primary-color), 0.25);
 }
 card item ul {
 	display: grid;
@@ -49,10 +66,11 @@ card item ul li {
 	grid-template-columns: repeat(3, 1fr);
 	color: rgba(var(--font-color), 0.9);
 	font-size: 0.9rem;
-	transition: background-color 0.4s ease;
+	transition: background-color 0.4s, transform 0.25s;
 }
 card item ul li:not(:first-child):hover {
 	background-color: rgba(var(--primary-color), 0.2) !important;
+	transform: translate(10px, 0px);
 }
 card item ul li.user:nth-child(odd) {
 	background-color:rgba(255, 255, 255, .1)
