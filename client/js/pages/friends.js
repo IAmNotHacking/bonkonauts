@@ -36,7 +36,7 @@ function init() {
 		}
 		tmpItem = document.createElement('item');
 			tmpItem.id = "friends";
-			tmpItem.innerHTML = `<ul><b><li><span id="name">Username</span><span id="dbid">DBID</span><span id="status">Status</span></li></b><hr/>${friendListStr}</ul>`;
+			tmpItem.innerHTML = FRIENDS.length != 0 ? `<ul><b><li><span id="name">Username</span><span id="dbid">DBID</span><span id="status">Status</span></li></b><hr/>${friendListStr}</ul>` : "There are no friends to display...";
 		tmpCard.appendChild(tmpItem);
 	friendsContainer.appendChild(tmpCard);
 
@@ -57,7 +57,7 @@ function init() {
 		}
 		tmpItem = document.createElement('item');
 			tmpItem.id = 'legacy';
-			tmpItem.innerHTML = `<ul><b><li><span id="name">Username</span></li></b><hr/>${legacyFriendListStr}</ul>`;
+			tmpItem.innerHTML = legacyFriendCount != 0 ? `<ul><b><li><span id="name">Username</span></li></b><hr/>${legacyFriendListStr}</ul>` : "There are no friends to display...";
 		tmpCard.appendChild(tmpItem);
 	friendsContainer.appendChild(tmpCard);
 }
