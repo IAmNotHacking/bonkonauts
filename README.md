@@ -30,7 +30,7 @@ Hello! **bonkonauts** is a bonk.io account viewer / dashboard. By logging in wit
     - Display a list of your bonk.io friends, their user id, and if they are online / offline.
   - Flash Friends
     - Simply display a list of all your friends from bonk.io flash version (if you had any)
-![Friends](./screenshots/friends.JPG)
+![Friends](./screenshots/friends.jpg)
 
 ### Leaderboard
   - The leaderboard is basically a list of every user that has logged in to **bonkonauts**, and is used more like a level leaderboard. It displays the highest level users at the top, and lowest level at the bottom. Anytime you login to **bonkonauts** or press the `Reload` button, the leaderboard will update accordingly.
